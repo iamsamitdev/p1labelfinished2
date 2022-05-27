@@ -1,0 +1,61 @@
+name: p1label
+description: A new Flutter project.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2 # สำหรับ Icon บน iOS
+  shared_preferences: ^2.0.15 # สำหรับเก็บข้อมูล local storage บน android/ios
+  esc_pos_printer: ^4.1.0 # สำหรับ Wifi printer
+  # flutter_barcode_listener: ^0.1.3
+  # visibility_detector: ^0.3.2
+  cross_scroll: ^0.0.75 # แสดง scrollbar ใน table data
+  device_info_plus: ^3.2.3 # อ่านรายละเอียดอุปกรณ์
+  network_info_plus: ^2.1.3 # อ่านข้อมูลการเชื่อม network เช่น ip address
+  audioplayers: ^0.20.1 # เล่นไฟล์เสียงรองรับ mp3 , wav
+  dropdown_button2: ^1.4.0 # ทำ dropdown menu
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.17.0
+  provider: ^5.0.0
+  package_info_plus: ^1.4.2 # อ่านเวอร์ชั่นของ app
+  ota_update: ^4.0.1 # อัพเดทแอพอัตโนมัติ
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0 # เช็ค standart dart coding
+  flutter_launcher_icons: # สำหรับไว้ generate icon ของแอพ
+    git:
+      url: https://github.com/Davenchy/flutter_launcher_icons.git
+      ref: fixMinSdkParseFlutter2.8
+
+flutter_icons:
+  android: "ic_launcher"
+  ios: false
+  image_path: "assets/images/appicon/AppIconP1Label.png"
+
+flutter:
+
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/images/appicon/
+    - assets/images/bg/
+    - assets/images/logo/
+    - assets/data/
+    - assets/audio/
+    
+
+  fonts:
+    - family: IBMPlexSansThaiLooped
+      fonts:
+        - asset: fonts/IBMPlexSansThaiLooped-Thin.ttf # Thin 100
+        - asset: fonts/IBMPlexSansThaiLooped-ExtraLight.ttf # ExtraLight 200
+        - asset: fonts/IBMPlexSansThaiLooped-Light.ttf # Light 300
+        - asset: fonts/IBMPlexSansThaiLooped-Regular.ttf # Regular 400
+        - asset: fonts/IBMPlexSansThaiLooped-Medium.ttf # Medium 500
